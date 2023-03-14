@@ -1,7 +1,7 @@
 const Missions = () => (
   <>
 
-    <h1>Missions</h1>
+    <h1>Mission</h1>
   </>
 
 );
