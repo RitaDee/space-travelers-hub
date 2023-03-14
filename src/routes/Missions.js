@@ -1,74 +1,50 @@
-// import React, { useEffect } from 'react';
-import Table from 'react-bootstrap/Table';
-import Button from 'react-bootstrap/Button';
-import Badge from 'react-bootstrap/Badge';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchMissions } from '../redux/mission/MissionSlice';
 
-const Mission = () => {
-  // const dispatch = useDispatch();
-  // const status = useSelector((state) => state.missions.status);
-  const missions = useSelector((state) => state.missions.list);
-  console.log(missions);
-  // useEffect(() => {
-  //   if (status === 'idle') {
-  //     dispatch(fetchMissions());
-  //   }
-  // }, [status, dispatch]);
-  // const missionHandler = (e) => {
-  //   dispatch(joinMission(e.target.id));
-  // };
+import React from 'react';
+import { useSelector } from 'react-redux';
+
+import styles from 'src/css/MissionsTable.module.css';
+import { selectMissions } from 'src/redux/missionsSlice';
+
+import MissionsLabel from './MissionsLabel';
+import MissionsButton from './MissionsButton';
+
+function MissionsTable() {
+  const missions = useSelector(selectMissions);
 
   return (
-    <div className="px-5 pr-5">
-      <Table striped bordered hover responsive>
-        <thead>
-          <tr>
-            <th>Mission</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th>{}</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-        missions.map((mission) => (
-          <tr key={mission.mission_id}>
-            <td className="fw-bold" style={{ width: '10%' }}>
-              <div className="d-flex flex-column flex-md-row">
-                <span className="me-md-2">Mission:</span>
-                <span>{mission.mission_name}</span>
-              </div>
+    <table className={styles.table}>
+      <colgroup>
+        <col className={styles.col1} />
+        <col className={styles.col2} />
+        <col className={styles.col3} />
+        <col className={styles.col4} />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Mission</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody>
+        {missions.map((mission) => (
+          <tr key={mission.mission_id} className={styles.missionRow}>
+            <td className={styles.name}>{mission.mission_name}</td>
+            <td>
+              <p className={styles.description}>{mission.description}</p>
             </td>
-            <td style={{ width: '45%' }}>
-              <div className="d-flex flex-column flex-md-row">
-                <span className="me-md-2">Description:</span>
-                <span>{mission.description}</span>
-              </div>
+            <td className={styles.center}>
+              <MissionsLabel isReserved={!!mission.reserved} />
             </td>
-            <td className="text-center align-middle" style={{ width: '5%' }}>
-              <Badge bg={mission.reserved ? ('info') : ('secondary')}>
-                {mission.reserved ? ('Active Member') : ('NOT A MEMBER')}
-              </Badge>
-            </td>
-            <td className="text-center align-middle" style={{ width: '10%' }}>
-              <Button
-                id={mission.mission_id}
-                variant={mission.reserved ? ('outline-danger') : ('outline-secondary')}
-                size="md"
-                // onClick={missionHandler}
-              >
-                {mission.reserved ? ('Leave Misson') : ('Join Misson')}
-              </Button>
+            <td className={styles.center}>
+              <MissionsButton isReserved={!!mission.reserved} />
             </td>
           </tr>
-        ))
-      }
-        </tbody>
-      </Table>
-    </div>
-
+        ))}
+      </tbody>
+    </table>
   );
-};
+}
 
-export default Mission;
+export default MissionsTable;
