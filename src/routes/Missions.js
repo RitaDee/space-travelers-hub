@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+// import React, { useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import Badge from 'react-bootstrap/Badge';
@@ -6,14 +6,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchMissions } from '../redux/mission/MissionSlice';
 
 const Mission = () => {
-  const dispatch = useDispatch();
-  const status = useSelector((state) => state.missions.status);
-  const missions = useSelector((state) => state.missions.missionList);
-  useEffect(() => {
-    if (status === 'idle') {
-      dispatch(fetchMissions());
-    }
-  }, [status, dispatch]);
+  // const dispatch = useDispatch();
+  // const status = useSelector((state) => state.missions.status);
+  const missions = useSelector((state) => state.missions.list);
+  console.log(missions);
+  // useEffect(() => {
+  //   if (status === 'idle') {
+  //     dispatch(fetchMissions());
+  //   }
+  // }, [status, dispatch]);
   // const missionHandler = (e) => {
   //   dispatch(joinMission(e.target.id));
   // };
