@@ -1,9 +1,9 @@
 import './App.css';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Missions from './pages/Missions';
-import Profile from './pages/Profile';
-import RocketLists from './pages/RocketLists';
+import Missions from './routes/Missions';
+import Profile from './routes/Profile';
+import RocketLists from './routes/RocketLists';
 
 function App() {
   return (
@@ -16,7 +16,6 @@ function App() {
         <Route path="/my-profile" element={<Profile />} />
       </Routes>
       <Outlet />
-
     </div>
   );
 }
