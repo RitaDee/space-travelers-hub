@@ -107,6 +107,14 @@
   color: white;
 }
 
+.reserved {
+  background-color: #18a2b8;
+  color: white;
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+  border-radius: 0.5rem;
+  margin-right: 0.4rem;
+}
+
 .cancel-reserved {
   background-color: #18a2b8;
   color: white;
