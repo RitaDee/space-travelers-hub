@@ -1,14 +1,24 @@
-import './App.css';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { Routes, Route, Outlet } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
 import Missions from './routes/Missions';
 import Profile from './routes/Profile';
 import RocketLists from './routes/RocketLists';
+import './App.css';
+
+import { fetchMissions } from './redux/mission/MissionSlice';
 
 function App() {
-  return (
-    <div className="App">
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    dispatch(fetchMissions());
+  }, [dispatch]);
+
+  return (
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<RocketLists />} />
@@ -16,7 +26,7 @@ function App() {
         <Route path="/my-profile" element={<Profile />} />
       </Routes>
       <Outlet />
-    </div>
+    </>
   );
 }
 

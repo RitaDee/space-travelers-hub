@@ -1,9 +1,13 @@
-const Missions = () => (
-  <>
+import React from 'react';
 
-    <h1>Mission</h1>
-  </>
+import MissionsTable from '../components/MissionsTable';
 
-);
+function Missions() {
+  return (
+    <main>
+      <MissionsTable />
+    </main>
+  );
+}
 
 export default Missions;
