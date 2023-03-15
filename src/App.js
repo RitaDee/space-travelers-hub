@@ -9,12 +9,17 @@ import RocketLists from './routes/RocketLists';
 import './App.css';
 
 import { fetchMissions } from './redux/mission/MissionSlice';
+import { fetchRocket } from './redux/rockets/rocketsSlice';
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchMissions());
+  }, [dispatch]);
+
+  useEffect(() => {
+    dispatch(fetchRocket());
   }, [dispatch]);
 
   return (
