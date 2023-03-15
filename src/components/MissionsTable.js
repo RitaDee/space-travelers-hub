@@ -1,12 +1,13 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import styles from '../styles/MissionsTable.module.css';
-import { selectMissions } from '../redux/mission/MissionSlice';
+import { missionUpdated, selectMissions } from '../redux/mission/MissionSlice';
 import MissionsLabel from './MissionsLabel';
 import MissionsButton from './MissionsButton';
 
 function MissionsTable() {
   const missions = useSelector(selectMissions);
+  const dispatch = useDispatch();
 
   const renderMissionRows = () => missions.map((mission) => (
     <tr key={mission.mission_id} className={styles.missionRow}>
@@ -18,7 +19,10 @@ function MissionsTable() {
         <MissionsLabel isReserved={!!mission.reserved} />
       </td>
       <td className={styles.center}>
-        <MissionsButton isReserved={!!mission.reserved} />
+        <MissionsButton
+          isReserved={!!mission.reserved}
+          onClick={() => dispatch(missionUpdated(mission.mission_id))}
+        />
       </td>
     </tr>
   ));
