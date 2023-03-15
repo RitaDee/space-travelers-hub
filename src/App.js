@@ -13,12 +13,11 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchMissions);
+    dispatch(fetchMissions());
   }, [dispatch]);
 
   return (
-    <div className="App">
-
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<RocketLists />} />
@@ -26,7 +25,7 @@ function App() {
         <Route path="/my-profile" element={<Profile />} />
       </Routes>
       <Outlet />
-    </div>
+    </>
   );
 }
 
