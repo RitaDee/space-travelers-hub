@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 
-import styles from 'src/css/MissionsButton.module.css';
+import styles from '../styles/MissionsButton.module.css';
 
 function MissionsButton({ isReserved }) {
   return (
