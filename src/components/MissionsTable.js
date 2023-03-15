@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import styles from 'src/css/MissionsTable.module.css';
-import { selectMissions } from 'src/redux/missionsSlice';
+import styles from '../styles/MissionsTable.module.css';
+import { selectMissions } from '../redux/mission/MissionSlice';
 
 import MissionsLabel from './MissionsLabel';
 import MissionsButton from './MissionsButton';
