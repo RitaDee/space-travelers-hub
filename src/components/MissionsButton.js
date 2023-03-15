@@ -4,10 +4,11 @@ import cn from 'classnames';
 
 import styles from '../styles/MissionsButton.module.css';
 
-function MissionsButton({ isReserved }) {
+function MissionsButton({ isReserved, onClick }) {
   return (
     <button
       type="button"
+      onClick={onClick}
       className={cn(
         styles.button,
         isReserved ? styles.leaveMission : styles.joinMission,
@@ -20,6 +21,7 @@ function MissionsButton({ isReserved }) {
 
 MissionsButton.propTypes = {
   isReserved: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default MissionsButton;
