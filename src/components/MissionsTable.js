@@ -4,8 +4,8 @@ import { useSelector } from 'react-redux';
 import styles from 'src/css/MissionsTable.module.css';
 import { selectMissions } from 'src/redux/missionsSlice';
 
-import MissionsLabel from './MissionsLabel';
-import MissionsButton from './MissionsButton';
+// import MissionsLabel from './MissionsLabel';
+// import MissionsButton from './MissionsButton';
 
 function MissionsTable() {
   const missions = useSelector(selectMissions);
@@ -33,12 +33,12 @@ function MissionsTable() {
             <td>
               <p className={styles.description}>{mission.description}</p>
             </td>
-            <td className={styles.center}>
+            {/* <td className={styles.center}>
               <MissionsLabel isReserved={!!mission.reserved} />
             </td>
             <td className={styles.center}>
               <MissionsButton isReserved={!!mission.reserved} />
-            </td>
+            </td> */}
           </tr>
         ))}
       </tbody>

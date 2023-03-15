@@ -1,3 +1,11 @@
 import React from 'react';
 
-import 
+import MissionsTable from '../components/MissionsTable';
+
+function Missions() {
+  <main>
+    <MissionsTable />
+  </main>;
+}
+
+export default Missions;
