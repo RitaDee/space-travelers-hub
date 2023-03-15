@@ -63,3 +63,64 @@
   gap: 1rem;
   text-decoration: none;
 }
+
+.rocket-ui {
+  display: flex;
+  column-gap: 30px;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.rocket-ui-image {
+  height: 25vh;
+}
+
+.img {
+  height: 100%;
+  width: 25rem;
+}
+
+.name {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.675rem;
+  font-weight: 700;
+  letter-spacing: normal;
+  color: black;
+  opacity: 0.8;
+}
+
+.desc {
+  opacity: 0.6;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.199rem;
+  font-weight: 300;
+  width: 80%;
+  margin-top: 0.2rem;
+}
+
+.reserve-btn {
+  font-size: 1.1rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 3px;
+  margin-top: 1.5rem;
+  color: white;
+}
+
+.cancel-reserved {
+  background-color: #18a2b8;
+  color: white;
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+  border-radius: 0.5rem;
+  margin-right: 0.4rem;
+}
+
+.cancel-btn {
+  font-size: 1rem;
+  padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+  background-color: transparent;
+  border: 0.01rem solid black;
+  border-radius: 3px;
+  margin-top: 1.5rem;
+  color: #6d757d;
+}
