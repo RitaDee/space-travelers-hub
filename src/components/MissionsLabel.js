@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from 'src/css/MissionsLabel.module.css';
+import styles from '../styles/MissionsLabel.module.css';
 
 function MissionsLabel({ isReserved }) {
   return (
