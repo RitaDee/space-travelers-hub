@@ -44,5 +44,5 @@ const missionsSlice = createSlice({
 
 export const { missionUpdated } = missionsSlice.actions;
 export default missionsSlice.reducer;
-
 export const selectMissions = (state) => state.missions.list;
+export const filterReservedMissions = (state) => state.rockets.list.filter((e) => e.reserved);
