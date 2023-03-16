@@ -1,0 +1,27 @@
+.button {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.joinMission {
+  color: #343a40;
+  border-color: #343a40;
+}
+
+.joinMission:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.leaveMission {
+  color: #dc3847;
+  border-color: #dc3847;
+}
+
+.leaveMission:hover {
+  background-color: #dc3847;
+  color: #fff;
+}
