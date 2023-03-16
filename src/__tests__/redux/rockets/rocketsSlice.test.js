@@ -1,7 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import reducer, { fetchRocket,
-   reserveRocket,
-   cancelReserve } from '../../../redux/rockets/rocketsSlice';
+import reducer, {
+  fetchRocket,
+  reserveRocket,
+  cancelReserve,
+} from '../../../redux/rockets/rocketsSlice';
 
 const rocket = {
   rocket_id: '1',
