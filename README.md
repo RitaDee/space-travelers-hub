@@ -53,7 +53,7 @@ VS Code
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo](https://spacetravel-capybara-b37efe.netlify.app/my-profile)
+[Live Demo](https://spacetravel-speculoos-5b113c.netlify.app/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
