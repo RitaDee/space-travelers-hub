@@ -20,9 +20,9 @@ Table of Contents
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 SPACE X APPLICATION- <a name="about-project"></a>
+# 📖 Space Travelers' Hub- <a name="about-project"></a>
 
-**Space X  -** is a Web App .
+**SSpace Travelers' Hub -** A web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -53,7 +53,7 @@ VS Code
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo](https://spacexdemo.onrender.com/)
+[Live Demo](https://spacetravel-capybara-b37efe.netlify.app/my-profile)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
