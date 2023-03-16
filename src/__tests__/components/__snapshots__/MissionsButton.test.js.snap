@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MissionsButton renders correctly when not reserved 1`] = `
+<button
+  className="button joinMission"
+  onClick={[MockFunction]}
+  type="button"
+>
+  Join Mission
+</button>
+`;
+
+exports[`MissionsButton renders correctly when reserved 1`] = `
+<button
+  className="button leaveMission"
+  onClick={[MockFunction]}
+  type="button"
+>
+  Leave Mission
+</button>
+`;
