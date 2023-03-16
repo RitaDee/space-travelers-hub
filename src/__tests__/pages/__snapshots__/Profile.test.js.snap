@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile renders correctly for reserved state 1`] = `
+<main
+  className="main"
+>
+  <section
+    className="section"
+  >
+    <h2
+      className="title"
+    >
+      My Missions
+    </h2>
+    <ul
+      className="list"
+    />
+  </section>
+  <section
+    className="section"
+  >
+    <h2
+      className="title"
+    >
+      My Rockets
+    </h2>
+    <ul
+      className="list"
+    />
+  </section>
+</main>
+`;
