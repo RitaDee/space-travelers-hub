@@ -22,7 +22,7 @@ Table of Contents
 
 # 📖 Space Travelers' Hub- <a name="about-project"></a>
 
-**SSpace Travelers' Hub -** A web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. 
+**Space Travelers' Hub -** A web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,7 +46,7 @@ VS Code
 - **Reserve Mission**
 - **Reserve Rocket**
 - **Redux Logger**
-- **Route Navigation Space X App**
+- **Route Navigation Space Travelers' Hub App**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -78,7 +78,7 @@ Clone this repository to your desired folder:
 
 cd my-folder
 
-git clone https://github.com/fitz95/SpaceXProject.git
+git clone https://github.com/RitaDee/space-travelers-hub.git
 Example commands:
 
 ```sh
@@ -116,17 +116,17 @@ You can deploy this project using Heroku, Netlify or any free hosting platform
 
 .
 
-👤 **Author1**
+👤 **Rita Nkem Daniel**
 
-- GitHub: [@githubhandle](https://github.com/fitz95/)
-- Twitter: [@twitterhandke](https://twitter.com/nsonggerald/)
-- linkedIn: [@linkedinhandle](https://www.linkedin.com/in/nsong-asoh/)
+- GitHub: [@RitaDee](https://github.com/RitaDee)
+- Twitter: [@durdana_dee](https://twitter.com/durdana_dee)
+- linkedIn: [@rita-daniel](https://www.linkedin.com/in/rita-daniel/)
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/oyhpnayiaw/)
-- Twitter: [@twitterhandke](https://twitter.com/oyhpnayiaw/)
-- linkedIn: [@linkedinhandle](https://www.linkedin.com/in/oyhpnayiaw/)
+- GitHub: [@Oscah01](https://github.com/Oscah01)
+- Twitter: [@alphonce_isaya](https://twitter.com/alphonce_isaya)
+- LinkedIn: [oscar-deus](linkedin.com/in/oscar-deus-757833210/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
