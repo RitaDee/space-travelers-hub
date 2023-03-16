@@ -1,0 +1,36 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px 0;
+  gap: 28px;
+}
+
+.section {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #212529;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  border: 1px solid #e1e4e8;
+  border-radius: 4px;
+}
+
+.list:empty {
+  display: none;
+}
+
+.listItem {
+  padding: 12px;
+  border-bottom: 1px solid #e1e4e8;
+  color: #212529;
+  padding-bottom: 20px;
+}

@@ -48,7 +48,7 @@ RocketUi.propTypes = {
   name: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
-  picture: PropTypes.string.isRequired,
+  picture: PropTypes.arrayOf(PropTypes.string).isRequired,
   reserved: PropTypes.bool.isRequired,
 };
 export default RocketUi;
